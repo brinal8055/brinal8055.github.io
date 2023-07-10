@@ -1,71 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Marriage Profile</title>
+    <title>Matrimonial Profile</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-        
-        header {
-            background-color: #333;
-            padding: 20px;
+            background-color: #000;
             color: #fff;
-            text-align: center;
+            font-family: 'Arial', sans-serif;
         }
-        
-        h1 {
-            margin: 0;
+
+        .section {
+            padding: 50px 0;
         }
-        
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .profile-pic {
-            width: 200px;
-            height: 200px;
+
+        .profile-image {
+            width: 100%;
+            max-width: 200px;
             border-radius: 50%;
             margin: 0 auto;
-            display: block;
-            object-fit: cover;
         }
-        
-        .profile-details {
-            margin-top: 20px;
-            text-align: center;
-        }
-        
-        .profile-details h2 {
-            margin: 0;
-        }
-        
-        .profile-details p {
-            color: #777;
-            margin-top: 5px;
+
+        .social-icons a img {
+            width: 30px;
+            margin: 0 10px;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Marriage Profile</h1>
-    </header>
-    <div class="container">
-        <img class="profile-pic" src="./images/social_profiles/brinal_goa.jpg" alt="Profile Picture">
-        <div class="profile-details">
-            <h2>Your Name</h2>
-            <p>Age: XX</p>
-            <p>Location: City, Country</p>
-            <p>Occupation: Your Occupation</p>
-            <p>About Me:</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed urna scelerisque, finibus lectus vel, tristique lacus. Proin eleifend pharetra dolor, euismod posuere lorem cursus et. Vestibulum eleifend nisi et neque commodo consequat. Fusce gravida rutrum mauris, vel fermentum neque iaculis sed.</p>
-            <p>Contact me at: your@email.com</p>
+    <section class="text-center section bg-dark">
+        <div class="container">
+            <img src="./images/social_profiles/brinal_goa.jpg" class="profile-image">
+            <h1>Your Name</h1>
+            <p>Hello there! Welcome to my Personal Data Center, where you'll discover most of the things I would like my partner to know. Prepare yourself for some exciting insights into my life.</p>
+            <div class="social-icons">
+                <a href="https://twitter.com/"><img src="./images/social_profiles/logo/Twitter.png" width="30" height="30" alt="Twitter"/></a>
+                <a href="https://facebook.com/"><img src="./images/social_profiles/logo/Facebook.jpeg" width="30" height="30" alt="Facebook"/></a>
+                <a href="https://instagram.com/"><img src="./images/social_profiles/logo/Instagram.jpeg" width="30" height="30" alt="Instagram"/></a>
+                <a href="https://wa.me/+123456789"><img src="./images/social_profiles/logo/Whatsapp.jpeg" width="30" height="30" alt="WhatsApp"/></a>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Add more sections as needed -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
