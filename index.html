@@ -5,16 +5,37 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&family=Quattrocento&display=swap" rel="stylesheet"> 
 
     <style>
         body {
             background-color: #000;
             color: #fff;
-            font-family: 'Ovo', sans-serif;
+            font-family: 'Ovo', serif;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-family: 'Quattrocento', serif;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
         }
 
         .section {
             padding: 50px 0;
+        }
+
+        .bg-dark-black {
+            background-color: #000;
+        }
+
+        .bg-dark-white {
+            background-color: #fff;
         }
 
         .profile-image {
@@ -33,10 +54,10 @@
 </head>
 <body>
     <div class="header">
-        <h2>Información Matrimonial</h2>
+        <h1>Información Matrimonial</h1>
     </div>
 
-    <section class="text-center section bg-dark">
+    <section class="text-center section bg-dark-white">
         <div class="container">
             <h1>Bienvenido Mr. Inquisite.! 🥂</h1>
             <p>Welcome to Brinal's Personal Data Centre, where you'll discover most of the things Brinal would like his partner to know. Prepare yourself for some exciting insights into his life.</p>
@@ -49,7 +70,7 @@
         </div>
     </section>
 
-    <section class="text-center section bg-dark">
+    <section class="text-center section bg-dark-black">
         <div class="container">
             <img src="./images/social_profiles/brinal_goa.jpg" class="profile-image">
             <h1>Your Name</h1>
