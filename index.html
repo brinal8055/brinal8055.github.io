@@ -20,7 +20,7 @@
             font-family: 'Quattrocento', serif;
         }
 
-        .header {
+        /* .header {
             position: sticky;
             top: 0;
             z-index: 1000; 
@@ -28,7 +28,7 @@
             background-color: #000;
             text-align: center;
             border-bottom: 2px solid #fff;
-        }
+        } */
 
         .section {
             padding: 50px 0;
@@ -51,23 +51,39 @@
             margin: 0 auto;
         }
 
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000; 
+            padding: 15px 0; 
+            background-color: #000;
+            text-align: center;
+            border-bottom: 2px solid #fff;
+            display: flex; /* Add flex layout */
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+        }
+
         .social-icons {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 50%; /* Adjust top of the social icons to center of header */
+            left: 15px; /* Add some space from the left for the icons */
             display: flex;
-            justify-content: space-between;
-            width: auto;
+            transform: translateY(-50%); /* Adjust the position to the vertical center */
         }
 
         .social-icons a {
             display: block;
+            margin-right: 10px; /* Add space between the icons */
+        }
+
+        .social-icons a:last-child {
+            margin-right: 0; /* Remove the margin for the last icon */
         }
 
         .social-icons img {
             max-width: 100%;
             height: auto;
-            display: block;
         }
     </style>
 </head>
