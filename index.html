@@ -1,69 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hola Amigo. Bienvenido for exploring Brinal's Insights.! 🥂</title>
+    <title>Marriage Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
+            background-color: #f2f2f2;
         }
-        .profile-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            margin: 20px;
+        
+        header {
+            background-color: #333;
             padding: 20px;
+            color: #fff;
+            text-align: center;
         }
-        .profile-photo {
-            width: 90%;
-            max-width: 200px;
-            height: auto;
+        
+        h1 {
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-pic {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            object-fit: cover;
         }
-        .profile-info {
+        
+        .profile-details {
+            margin-top: 20px;
             text-align: center;
         }
-        .profile-info h1 {
-            margin-top: 20px;
+        
+        .profile-details h2 {
+            margin: 0;
         }
-        .profile-info p {
-            margin-top: 10px;
-        }
-        .contact-info {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .social-icons img {
-            margin: 0 15px;
+        
+        .profile-details p {
+            color: #777;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="profile-container">
-        <img class="profile-photo" src="./images/social_profiles/brinal_goa.jpg" alt="Profile Photo">
-        <div class="profile-info">
-            <h1>Your Name</h1>
-            <p>I am a software engineer living in San Francisco, CA. I enjoy traveling, hiking and playing the guitar during free time.</p>
-        </div>
-        <div class="social-icons">
-            <a href="https://twitter.com/"><img src="./images/social_profiles/logo/Twitter.png" width="30" height="30" alt="Twitter"/></a>
-            <a href="https://facebook.com/"><img src="./images/social_profiles/logo/Facebook.jpeg" width="30" height="30" alt="Facebook"/></a>
-            <a href="https://instagram.com/"><img src="./images/social_profiles/logo/Instagram.jpeg" width="30" height="30" alt="Instagram"/></a>
-            <a href="https://wa.me/+123456789"><img src="./images/social_profiles/logo/Whatsapp.jpeg" width="30" height="30" alt="WhatsApp"/></a>
-        </div>
-        <div class="contact-info">
-            <p>For more information, please contact my GOD at: <a href="mailto:brinal.savsaviya.personal@gmail.com" style="color: #fff;">brinal.savsaviya@gmail.com</a></p>
+    <header>
+        <h1>Marriage Profile</h1>
+    </header>
+    <div class="container">
+        <img class="profile-pic" src="./images/social_profiles/brinal_goa.jpg" alt="Profile Picture">
+        <div class="profile-details">
+            <h2>Your Name</h2>
+            <p>Age: XX</p>
+            <p>Location: City, Country</p>
+            <p>Occupation: Your Occupation</p>
+            <p>About Me:</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed urna scelerisque, finibus lectus vel, tristique lacus. Proin eleifend pharetra dolor, euismod posuere lorem cursus et. Vestibulum eleifend nisi et neque commodo consequat. Fusce gravida rutrum mauris, vel fermentum neque iaculis sed.</p>
+            <p>Contact me at: your@email.com</p>
         </div>
     </div>
 </body>
