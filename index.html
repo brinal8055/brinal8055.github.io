@@ -18,6 +18,7 @@
 
         h1 {
             font-family: 'Quattrocento', serif;
+            font-size: 20px; /* Decrease the size of h1 in header */
         }
 
         .section {
@@ -45,7 +46,7 @@
             position: sticky;
             top: 0;
             z-index: 1000; 
-            /* padding-top: 5px; */
+            padding-top: 5px;
             padding: 15px 0; 
             background-color: #000;
             text-align: center;
@@ -65,12 +66,6 @@
             justify-content: center;
             align-items: flex-start; /* Align items to the start instead of center */
             height: 100px; /* Define a height for the footer */
-        }
-
-        @media (min-width: 768px) { /* Target screens larger than 768px, usually tablets and desktops */
-            .header {
-                justify-content: center; /* For larger screens, center items horizontally */
-            }
         }
 
         .social-icons {
@@ -95,13 +90,18 @@
         }
 
         @media (min-width: 768px) { /* Target screens larger than 768px, usually tablets and desktops */
+            .header {
+                justify-content: center; /* For larger screens, center items horizontally */
+                
+            }
+
             .social-icons img {
                 max-width: 25%; /* On larger screens, reduce size of social icons */
             }
 
             .social-icons a:first-child {
-            margin-left: 100px; /* Remove the margin for the first icon */
-        }
+                margin-left: 100px; /* Remove the margin for the first icon */
+            }
         }
     </style>
 </head>
