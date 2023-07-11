@@ -50,17 +50,22 @@
             background-color: #000;
             text-align: center;
             border-bottom: 2px solid #fff;
-            display: flex; /* Add flex layout */
-            justify-content: center; /* Center items horizontally */
+            display: flex; /* Maintain flex layout */
             align-items: center; /* Center items vertically */
+        }
+
+        @media (min-width: 768px) { /* Target screens larger than 768px, usually tablets and desktops */
+            .header {
+                justify-content: center; /* For larger screens, center items horizontally */
+            }
         }
 
         .social-icons {
             position: absolute;
             top: 50%; /* Adjust top of the social icons to center of header */
-            left: 1px; /* Add some space from the left for the icons */
+            left: 10px; /* Add more space from the left for the icons */
             display: flex;
-            transform: translateY(25%); /* Adjust the position to the vertical center */
+            transform: translateY(-50%); /* Adjust the position to the vertical center */
         }
 
         .social-icons a {
@@ -73,8 +78,14 @@
         }
 
         .social-icons img {
-            max-width: 25%;
+            max-width: 100%;
             height: auto;
+        }
+
+        @media (min-width: 768px) { /* Target screens larger than 768px, usually tablets and desktops */
+            .social-icons img {
+                max-width: 25%; /* On larger screens, reduce size of social icons */
+            }
         }
     </style>
 </head>
