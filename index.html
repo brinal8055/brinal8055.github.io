@@ -56,16 +56,15 @@
 
         .footer {
             position: relative; /* Position relative to the footer itself */
-            bottom: 0;
-            z-index: 1000; 
-            padding-bottom: 10px;
-            padding: 15px 0;
+            padding-top: 15px;
+            padding-bottom: 50px; /* Increasing padding at the bottom */
             background-color: #000;
             text-align: center;
             border-top: 2px solid #fff;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Align items to the start instead of center */
+            height: 100px; /* Define a height for the footer */
         }
 
         @media (min-width: 768px) { /* Target screens larger than 768px, usually tablets and desktops */
@@ -76,7 +75,7 @@
 
         .social-icons {
             position: absolute;
-            bottom: 10px; /* Adjust the bottom so the icons aren't too close to the edge */
+            bottom: 15px; /* Adjust the bottom so the icons aren't too close to the edge */
             left: 10px; /* Add some space from the left for the icon */
             display: flex;
         }
@@ -91,7 +90,7 @@
         }
 
         .social-icons img {
-            max-width: 100%;
+            max-width: 75%;
             height: auto;
         }
 
