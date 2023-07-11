@@ -54,6 +54,18 @@
             align-items: center; /* Center items vertically */
         }
 
+        .footer {
+            position: relative; /* Position relative to the footer itself */
+            padding-top: 15px;
+            padding: 15px 0;
+            background-color: #000;
+            text-align: center;
+            border-top: 2px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         @media (min-width: 768px) { /* Target screens larger than 768px, usually tablets and desktops */
             .header {
                 justify-content: center; /* For larger screens, center items horizontally */
@@ -62,23 +74,22 @@
 
         .social-icons {
             position: absolute;
-            top: 50%; /* Adjust top of the social icons to center of header */
-            left: 10px; /* Add more space from the left for the icons */
+            bottom: 10px; /* Adjust the bottom so the icons aren't too close to the edge */
+            left: 10px; /* Add some space from the left for the icon */
             display: flex;
-            transform: translateY(-50%); /* Adjust the position to the vertical center */
         }
 
         .social-icons a {
             display: block;
-            margin-right: 10px; /* Add space between the icons */
+            margin-left: 10px; /* Add space between the icons */
         }
 
-        .social-icons a:last-child {
-            margin-right: 0; /* Remove the margin for the last icon */
+        .social-icons a:first-child {
+            margin-left: 0; /* Remove the margin for the first icon */
         }
 
         .social-icons img {
-            max-width: 100%;
+            max-width: 25%;
             height: auto;
         }
 
@@ -92,12 +103,6 @@
 <body>
     <div class="header">
         <h1>Información Matrimonial</h1>
-        <div class="social-icons">
-            <a href="https://twitter.com/"><img src="./images/social_profiles/logo/Twitter.png" alt="Twitter"/></a>
-            <a href="https://facebook.com/"><img src="./images/social_profiles/logo/Facebook.png" alt="Facebook"/></a>
-            <a href="https://instagram.com/"><img src="./images/social_profiles/logo/Instagram.png" alt="Instagram"/></a>
-            <a href="https://wa.me/+123456789"><img src="./images/social_profiles/logo/Whatsapp.png" alt="WhatsApp"/></a>
-        </div>
     </div>
 
     <section class="text-center section bg-dark-black">
@@ -123,37 +128,14 @@
         </div>
     </section>
 
-    <section class="text-center section bg-dark-white">
-        <div class="container">
-            <img src="./images/social_profiles/brinal_goa.jpg" class="profile-image">
-            <h1>Your Name</h1>
-            <p>Hello there! Welcome to my Personal Data Center, where you'll discover most of the things I would like my partner to know. Prepare yourself for some exciting insights into my life.</p>
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://twitter.com/"><img src="./images/social_profiles/logo/Twitter.png" alt="Twitter"/></a>
+            <a href="https://facebook.com/"><img src="./images/social_profiles/logo/Facebook.png" alt="Facebook"/></a>
+            <a href="https://instagram.com/"><img src="./images/social_profiles/logo/Instagram.png" alt="Instagram"/></a>
+            <a href="https://wa.me/+123456789"><img src="./images/social_profiles/logo/Whatsapp.png" alt="WhatsApp"/></a>
         </div>
-    </section>
-
-    <section class="text-center section bg-dark-white">
-        <div class="container">
-            <img src="./images/social_profiles/brinal_goa.jpg" class="profile-image">
-            <h1>Your Name</h1>
-            <p>Hello there! Welcome to my Personal Data Center, where you'll discover most of the things I would like my partner to know. Prepare yourself for some exciting insights into my life.</p>
-        </div>
-    </section>
-
-    <section class="text-center section bg-dark-white">
-        <div class="container">
-            <img src="./images/social_profiles/brinal_goa.jpg" class="profile-image">
-            <h1>Your Name</h1>
-            <p>Hello there! Welcome to my Personal Data Center, where you'll discover most of the things I would like my partner to know. Prepare yourself for some exciting insights into my life.</p>
-        </div>
-    </section>
-
-    <section class="text-center section bg-dark-white">
-        <div class="container">
-            <img src="./images/social_profiles/brinal_goa.jpg" class="profile-image">
-            <h1>Your Name</h1>
-            <p>Hello there! Welcome to my Personal Data Center, where you'll discover most of the things I would like my partner to know. Prepare yourself for some exciting insights into my life.</p>
-        </div>
-    </section>
+    </div>
 
     <!-- Add more sections as needed -->
 
