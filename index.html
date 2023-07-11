@@ -83,7 +83,7 @@
 
         .social-icons a {
             display: block;
-            margin-left: 10px; /* Add space between the icons */
+            margin-left: 0px; /* Add space between the icons */
         }
 
         .social-icons a:first-child {
@@ -91,7 +91,7 @@
         }
 
         .social-icons img {
-            max-width: 50%;
+            max-width: 100%;
             height: auto;
         }
 
@@ -99,6 +99,10 @@
             .social-icons img {
                 max-width: 25%; /* On larger screens, reduce size of social icons */
             }
+
+            .social-icons a:first-child {
+            margin-left: 100px; /* Remove the margin for the first icon */
+        }
         }
     </style>
 </head>
