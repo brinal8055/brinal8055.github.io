@@ -1,70 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <title>Brinal's Insights</title>
+    <link rel="icon" href="./images/title_logo/BS.ico" type="image/x-icon" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hola Amigo. Bienvenido for exploring Brinal's Insights.! 🥂</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&family=Quattrocento&display=swap" rel="stylesheet"> 
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #000;
             color: #fff;
+            font-family: 'Ovo', serif;
+            padding-top: 50px;
         }
-        .profile-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            margin: 20px;
-            padding: 20px;
+
+        .header h1 {
+            font-family: 'Quattrocento', serif;
+            font-size: 40px;
+            text-align: center;
         }
-        .profile-photo {
-            width: 90%;
+
+        .section {
+            padding: 50px 0;
+        }
+
+        .bg-dark-black {
+            color: #fff;
+            background-color: #000;
+        }
+
+        .bg-dark-white {
+            color: #000;
+            background-color: #fff;
+        }
+
+        .profile-image {
+            width: 100%;
             max-width: 200px;
-            height: auto;
-            border-radius: 50%;
+            border-radius: 5%;
+            margin: 0 auto;
         }
-        .profile-info {
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000; 
+            padding-top: 5px;
+            padding: 15px 0; 
+            background-color: #000;
             text-align: center;
+            border-bottom: 2px solid #fff;
+            display: flex; /* Maintain flex layout */
+            align-items: center; /* Center items vertically */
         }
-        .profile-info h1 {
-            margin-top: 20px;
-        }
-        .profile-info p {
-            margin-top: 10px;
-        }
-        .contact-info {
+
+        .footer {
+            position: relative; /* Position relative to the footer itself */
+            padding-top: 15px;
+            padding-bottom: 50px; /* Increasing padding at the bottom */
+            background-color: #000;
             text-align: center;
-            margin-top: 30px;
-        }
-        .social-icons {
+            border-top: 2px solid #fff;
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            align-items: center; /* Align items to the start instead of center */
+            height: 100px; /* Define a height for the footer */
         }
+
+        .social-icons {
+            position: absolute;
+            bottom: 15px; /* Adjust the bottom so the icons aren't too close to the edge */
+            left: 10px; /* Add some space from the left for the icon */
+            display: flex;
+        }
+
+        .social-icons a {
+            display: block;
+            margin-left: 0px; /* Add space between the icons */
+        }
+
+        .social-icons a:first-child {
+            margin-left: 0; /* Remove the margin for the first icon */
+        }
+
         .social-icons img {
-            margin: 0 15px;
+            max-width: 75%;
+            height: auto;
+        }
+
+        @media (min-width: 500px) { /* Target screens larger than 768px, usually tablets and desktops */
+
+            .header h1 {
+                justify-content: center; /* For larger screens, center items horizontally */
+                text-align: center; /* Center items vertically */
+            }
+
+            .social-icons img {
+                max-width: 25%; /* On larger screens, reduce size of social icons */
+            }
+
+            .social-icons a:first-child {
+                margin-left: 100px; /* Remove the margin for the first icon */
+            }
         }
     </style>
 </head>
 <body>
-    <div class="profile-container">
-        <img class="profile-photo" src="./images/social_profiles/brinal_goa.jpg" alt="Profile Photo">
-        <div class="profile-info">
+    <div class="text-center header">
+        <h1>Información Matrimonial</h1>
+    </div>
+
+    <section class="text-center section bg-dark-black">
+        <div class="container">
+            <h2>Bienvenido Mr. Inquisite.! 🥂</h2>
+            <p>Welcome to Brinal's Personal Data Centre. Prepare yourself for some exciting insights into his life.</p>
+        </div>
+    </section>
+
+    <section class="text-center section bg-dark-white">
+        <div class="container">
+            <img src="./images/social_profiles/brinal_goa.jpg" class="profile-image">
+            <h1>Brinal Savsaviya</h1>
+            <p>Hello there! Welcome to my Personal Data Center, where you'll discover most of the things I would like my partner to know. Prepare yourself for some exciting insights into my life.</p>
+        </div>
+    </section>
+
+    <section class="text-center section bg-dark-white">
+        <div class="container">
+            <img src="./images/social_profiles/brinal_goa.jpg" class="profile-image">
             <h1>Your Name</h1>
-            <p>I am a software engineer living in San Francisco, CA. I enjoy traveling, hiking and playing the guitar during free time.</p>
+            <p>Hello there! Welcome to my Personal Data Center, where you'll discover most of the things I would like my partner to know. Prepare yourself for some exciting insights into my life.</p>
         </div>
+    </section>
+
+    <div class="footer">
         <div class="social-icons">
-            <a href="https://twitter.com/"><img src="./images/social_profiles/logo/Twitter.png" width="30" height="30" alt="Twitter"/></a>
-            <a href="https://facebook.com/"><img src="./images/social_profiles/logo/Facebook.jpeg" width="30" height="30" alt="Facebook"/></a>
-            <a href="https://instagram.com/"><img src="./images/social_profiles/logo/Instagram.jpeg" width="30" height="30" alt="Instagram"/></a>
-            <a href="https://wa.me/+123456789"><img src="./images/social_profiles/logo/Whatsapp.jpeg" width="30" height="30" alt="WhatsApp"/></a>
-        </div>
-        <div class="contact-info">
-            <p>For more information, please contact my GOD at: <a href="mailto:brinal.savsaviya.personal@gmail.com" style="color: #fff;">brinal.savsaviya@gmail.com</a></p>
+            <a href="https://twitter.com/"><img src="./images/social_profiles/logo/Twitter.png" alt="Twitter"/></a>
+            <a href="https://facebook.com/"><img src="./images/social_profiles/logo/Facebook.png" alt="Facebook"/></a>
+            <a href="https://instagram.com/"><img src="./images/social_profiles/logo/Instagram.png" alt="Instagram"/></a>
+            <a href="https://wa.me/+123456789"><img src="./images/social_profiles/logo/Whatsapp.png" alt="WhatsApp"/></a>
         </div>
     </div>
+
+    <!-- Add more sections as needed -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
