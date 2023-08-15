@@ -171,11 +171,11 @@ text-transform: uppercase;
 *******Header******
 **************************/
 #main-nav.navbar-default {
-background: #000000;
+  background: #000000;
 }
 #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
-background: rgb(255, 255, 255);
-color: #000000;
+  background: rgb(255, 255, 255);
+  color: #000000;
 }
 .navbar.navbar-default {
   border: 0;
@@ -190,15 +190,14 @@ color: #000000;
   padding: 10px 15px 1px;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
-color: #FFFFFF;
- 
-background: #000;
+  color: #008080;
+  background: #000;
 }
 .navbar-default .navbar-nav>li>a{
-color: #FFFFFF;
+  color: #008080; 
 } 
 #main-nav.navbar-default {
-background: #000;
+  background: #000;
 }
 .navbar-nav>li {
 }
