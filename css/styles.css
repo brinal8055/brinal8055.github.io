@@ -169,11 +169,11 @@ text-transform: uppercase;
 *******Header******
 **************************/
 #main-nav.navbar-default {
-background: #FFFFFF;
+background: #000000;
 }
 #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
 background: rgb(249, 105, 14);
-color: #FFFFFF;
+color: #000000;
 }
 .navbar.navbar-default {
   border: 0;
@@ -196,7 +196,7 @@ background: transparent;
 color: #020202;
 } 
 #main-nav.navbar-default {
-background: #FFF;
+background: #000;
 }
 .navbar-nav>li {
 }
