@@ -11,7 +11,7 @@ Author URL: http://webthemez.com
 body {
   padding-top: 100px;
   background: #fff;
-  font-family: 'Ovo', sans-serif;
+  font-family: 'Ovo', serif;
   font-weight: 400;
   color: #282828;
   line-height: 26px;
@@ -24,7 +24,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  font-family: 'Quattrocento', sans-serif;
+  font-family: 'Quattrocento', serif;
 }
 a {
   color: #45aed6;
