@@ -214,7 +214,7 @@ background: #000;
     border-bottom: 4px solid transparent;
 }
   .navbar-default .navbar-nav>li>a {
-	color: #0E0E0E;
+	color: #FFFFFF;
 	}
   #main-nav.navbar-default .navbar-nav > li.active > a,
 
@@ -222,7 +222,7 @@ background: #000;
   #main-nav.navbar-default .navbar-nav > li:hover > a {
     background: transparent; 
 	
-    color: #F9690E;
+    color: #CCCCCC;
   
 }
   #main-nav.navbar-default .dropdown-menu {
