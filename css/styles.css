@@ -173,7 +173,7 @@ background: #000000;
 }
 #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
 background: rgb(255, 255, 255);
-color: #000000;
+color: #FFFFFF;
 }
 .navbar.navbar-default {
   border: 0;
@@ -193,7 +193,7 @@ color: #FFFFFF;
 background: transparent;
 }
 .navbar-default .navbar-nav>li>a{
-color: #020202;
+color: #FFFFFF;
 } 
 #main-nav.navbar-default {
 background: #000;
